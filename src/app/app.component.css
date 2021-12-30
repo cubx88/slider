@@ -1,0 +1,27 @@
+
+html {
+  text-align: center;
+}
+
+mat-slider {
+  width: 300px;
+}
+
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 49px;
+  background-color: #33AEFF;
+}
+
+.container {
+  margin-top: 100px;
+  font-family: arial;
+  font-size: 22px;
+  color: blue;
+  align-content: inherit;
+}
+
+

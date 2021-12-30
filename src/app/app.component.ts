@@ -6,5 +6,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'slider';
+  title = 'Olafs slider';
+
+  constructor(){}
+
+  slide_lbl(val: number | null) {
+    if (!val) {
+      return 0;
+    }
+
+    if (val >= 1000) {
+      return Math.round(val / 1000);
+    }
+    return val;
+  }
 }
