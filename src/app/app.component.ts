@@ -5,19 +5,18 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+
 export class AppComponent {
-  title = 'Olafs slider';
 
   constructor(){}
 
-  slide_lbl(val: number | null) {
-    if (!val) {
-      return 0;
-    }
+  mySliderAction(event:any) {
 
-    if (val >= 1000) {
-      return Math.round(val / 1000);
+    let slider = (<HTMLInputElement>document.getElementById('sldr'));
+    let output = (<HTMLInputElement>document.getElementById('otp'));
+
+    slider.oninput = ()=> {
+       output.innerHTML = event.target.value;
     }
-    return val;
   }
 }
