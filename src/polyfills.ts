@@ -58,8 +58,12 @@
  * Zone JS is required by default for Angular itself.
  */
 import 'zone.js';  // Included with Angular CLI.
-
+import 'classlist.js';
+import 'web-animations-js';
+import 'zone.js/dist/zone';
 
 /***************************************************************************************************
  * APPLICATION IMPORTS
  */
+// import 'document-register-element';
+// import '@webcomponents/webcomponentsjs/';

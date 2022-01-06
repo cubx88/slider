@@ -7,16 +7,21 @@ import { Component } from '@angular/core';
 })
 
 export class AppComponent {
-
   constructor(){}
 
-  mySliderAction(event:any) {
+  ngOnInit(){
+    let btn = <HTMLInputElement>document.getElementById("btn");
+    btn.className="toggled";
+  }
+  clickMe(){
 
-    let slider = (<HTMLInputElement>document.getElementById('sldr'));
-    let output = (<HTMLInputElement>document.getElementById('otp'));
+    let btn = <HTMLInputElement>document.getElementById("btn");
 
-    slider.oninput = ()=> {
-       output.innerHTML = event.target.value;
+    if(btn.className!=="toggled"){
+      btn.className = "toggled";
+    }
+    else{
+      btn.className ='untoggled';
     }
   }
 }

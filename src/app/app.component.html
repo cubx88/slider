@@ -4,17 +4,14 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Olaf slider</title>
 </head>
 <body>
-  <div class="sldCont">
-    <div class="az">
-      <input type="range" min="0" max="100" value="0" id="sldr" (change)="mySliderAction($event)" (mouseover)="mySliderAction($event)" class = "slider" />
-      <p >Value:
-        <span id ="otp" ></span>
-      </p>
+  <div class="wrapper">
+    <div class="msg">
+      <span class="box">Olafs Slider</span>
     </div>
-
+    <olaf-slider ></olaf-slider>
   </div>
+  <button id="btn"(click)="clickMe()">Click me</button>
 </body>
 </html>

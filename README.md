@@ -18,7 +18,7 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 The essential code can be found in:
 
-https://github.com/PSPDFKit/technical-exercise-olaf/blob/master/src/app/app.component.ts
+https://github.com/PSPDFKit/technical-exercise-olaf/blob/master/src/module/olafsSlider.js
 
 https://github.com/PSPDFKit/technical-exercise-olaf/blob/master/src/app/app.component.html
 
